@@ -1,11 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# Pre processing and generation of images
-
-# In[13]:
-
-
 from PIL import Image, ImageFont, ImageDraw
 import os
 import numpy as np
@@ -14,11 +6,10 @@ import pandas as pd
 from fontTools.ttLib import TTFont
 from tqdm.auto import tqdm
 
-
-# In[14]:
-
+import csvscript
 
 width, height = 60, 60
+
 def generate_image(character, font_path, image_path):
     background_color = 'black'
     text_color = (255)
@@ -38,16 +29,12 @@ def generate_image(character, font_path, image_path):
     for i in range(width):
         for j in range(height):
             if image.getpixel((i, j)) != 0:
-                if not os.path.exists("../Kakiburi-Images/U+{}".format(hex(character)[2:])):
+                if not os.path.exists("./images/U+{}".format(hex(character)[2:])):
                     os.mkdir(os.path.dirname(image_path))
                 image.save(image_path)
                 return True
     
     return False
-
-
-# In[15]:
-
 
 unicodes = [0x3000,
             0x303f,
@@ -60,21 +47,12 @@ unicodes = [0x3000,
             0x4e00,
             0x9faf]
 
-# store in a variable the sum of the total unicodes from the list of 2 paired ranges defined above
 total_unicodes = 0
 for i in range(len(unicodes), 0, -2):
     total_unicodes += unicodes[i - 1] - unicodes[i - 2]
 
-
-# In[16]:
-
-
 infos = pd.read_csv("./fonts.csv", index_col=0)
 infos.head()
-
-
-# In[17]:
-
 
 def char_in_font(unicode_char, font):
     for cmap in font['cmap'].tables:
@@ -82,10 +60,6 @@ def char_in_font(unicode_char, font):
             if ord(unicode_char) in cmap.cmap:
                 return True
     return False
-
-
-# In[18]:
-
 
 dataset_x = []
 dataset_y = []
@@ -101,7 +75,7 @@ for index, info in infos.iterrows():
             if not char_in_font(chr(j), font):
                 continue
 
-            img_path = "../Kakiburi-Images/U+{}/{}.png".format(hex(j)[2:], index)
+            img_path = "./images/U+{}/{}.png".format(hex(j)[2:], index)
 
             valid = generate_image(j, info['path'], img_path)
             if not valid:
@@ -112,14 +86,5 @@ for index, info in infos.iterrows():
             dataset_y.append(j)
         i += 2
 
-
 np.save("./dataset_x.npy", np.array(dataset_x).reshape(-1, width, height, 1))
 np.save("./dataset_y.npy", np.array(dataset_y).reshape(-1, 1))
-                        
-
-
-# In[ ]:
-
-
-
-
