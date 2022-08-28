@@ -1,0 +1,36 @@
+■フォントのライセンス
+
+本フォントファイルは、源柔ゴシック・源ノ角ゴシックと同じ SIL Open Font License 1.1 のもとで使用することができます。
+
+※SIL Open Font License 1.1 の内容は、アーカイブに同梱の SIL_Open_Font_License_1.1 に記載されています。
+※この日本語訳は、以下から参照することができます。
+　http://osdn.jp/projects/opensource/wiki/SIL_Open_Font_License_1.1
+
+■ご利用にあたって
+
+ひらがな・カタカナ以外は以下のオープンソースフォントを利用しています。
+
+・源柔ゴシック
+・源ノ角ゴシック
+・M+ OUTLINE FONTS
+
+（C） Copyright 2017 Adobe Systems Incorporated
+（C） Copyright 2014 自家製フォント工房 by MM.
+（C） Copyright 2015 M+ FONTS PROJECT
+
+■免責事項
+
+このサイトで提供しているフォントはすべて、TrueType形式のフォントファイルです。
+WindowsとMacintoshでの仕様を想定しています。Android端末での表示もおおよそ可能です。
+いずれの環境においても、すべての環境で正常に動作する保証はできかねますので、ご了承ください。
+また、このフォントを利用したことによって発生したいかなる損害につきましても、
+フォント製作者・サイト運営者は責任を負わないこととさせていただきます。
+
+■謝辞
+
+「コーポレート・ロゴ（ラウンド）」フォントは「源柔ゴシック」「源ノ角ゴシック」に、
+独自のひらがな・カタカナデザインを乗せたものになります。
+すばらしいフォントを公開してくださったAdobe Systems Incorporated様、自家製フォント工房 by MM.様、M+ FONTS PROJECT様に
+心から御礼申し上げます。
+
+LOGOTYPE.JP

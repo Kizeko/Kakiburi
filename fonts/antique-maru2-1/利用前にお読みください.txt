@@ -1,0 +1,14 @@
+本フォントファイルは、SIL Open Font License 1.1 が適用されています。
+SIL Open Font License 1.1 の日本語訳は以下URLで確認できます。
+https://ja.osdn.net/projects/opensource/wiki/SIL_Open_Font_License_1.1
+
+フォントデータに含まれる、「源ノ」シリーズの文字グリフの著作権は Adobe が所有しています。
+（C） Copyright 2017 Adobe Systems Incorporated
+（C） Copyright 2014-2020 Adobe
+
+サイト上の免責事項などについてもご確認の上、インストールしてご利用ください。
+
+■謝辞
+
+本フォントは、「源ノ」シリーズに加工等を加え、独自の仮名文字を乗せたものとなります。
+素晴らしいフォントを公開していただいたAdobe様に心よりお礼申し上げます。

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>フォント試し打ちツール</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<script>
+function change() {
+var newStyle    = document.createElement('style');
+var newFontName = document.form1.dummy.value;
+var newFontURL  = document.form1.url.value;
+var newPath     = location.pathname;
+newPath = newPath.replace( /tester.html/g , newFontURL ) ;
+
+newStyle.appendChild(document.createTextNode("\
+@font-face {\
+    font-family: '" + newFontName + "';\
+    src: url('" + newPath + "');\
+}\
+textarea {;\
+    font-family: '" + newFontName + "';\
+}\
+"));
+document.head.appendChild(newStyle);
+}
+</script>
+</head>
+<body>
+<div style="margin:0 5%;line-height:1em">
+<form name="form1">FILENAME:
+<input type="text" name="url" value="OtsutomeFont_Ver3.ttf">
+<input type="text" name="dummy" value="TEST" style="display:none;">
+<input type="button" value="GO"  onclick="change();">
+<hr>
+<textarea class="test2" style="font-size:24pt;width:100%;discretionary-ligatures;">This is font tester.</textarea>
+</form><br>
+<h3>フォント試し打ちツールについて</h3>
+<p>フォントをインストールする前にブラウザ上で字形を確認することが出来ます。</p>
+<p>ご使用のブラウザによっては動作しない場合がございます。</p>
+<h3>使い方</h3>
+<p>1.このHTMLファイルと同一フォルダにフォントファイルを置きます。</p>
+<p>2.「This is font tester.」と入力されているテキストフォームに試し打ちしたい文字を入力します。</p>
+<p>3.「GO」ボタンを押すとテキストフォームの文字が「FILENAME」欄で指定したフォントファイルの文字で表示されるようになります。</p>
+<h3>ライセンス</h3>
+<p>このHTMLファイル は <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス</a>の下に提供されています。</p>
+<p>2017年7月29日 何某亭</p>
+</div>
+</body>
+</html>
