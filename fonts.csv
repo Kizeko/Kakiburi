@@ -1,33 +1,26 @@
 index,name,path,encoding
 0,genkai-mincho,./fonts/Adobe/Genkai-Mincho-font/genkai-mincho.ttf,ADOB
-1,RampartOne-Regular,./fonts/Adobe/Rampart_One/RampartOne-Regular.ttf,ADOB
-2,YujiBoku-Regular,./fonts/Adobe/Yuji_Boku/YujiBoku-Regular.ttf,ADOB
-3,ReggaeOne-Regular,./fonts/Adobe/Reggae_One/ReggaeOne-Regular.ttf,ADOB
-4,Tanugo-TTF-Light,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Light.ttf,sjis
-5,Tanugo-TTF-Regular,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Regular.ttf,sjis
-6,Tanugo-TTF-Round-Bold,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Round-Bold.ttf,sjis
-7,Tanugo-TTF-Bold,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Bold.ttf,sjis
-8,Tanugo-TTF-Round-Regular,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Round-Regular.ttf,sjis
-9,Tanugo-TTF-Round-Light,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Round-Light.ttf,sjis
-10,Tanugo-TTF-ExtraLight,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-ExtraLight.ttf,sjis
-11,ipaexg,./fonts/JIS/KanjyukuGothic/その他のファイル/ipaexg00201/ipaexg.ttf,sjis
-12,Senobi-Gothic-Regular,./fonts/JIS/MODI_Senobi-Gothic_2017_0702/Senobi-Gothic-Regular.ttf,sjis
-13,Senobi-Gothic-Bold,./fonts/JIS/MODI_Senobi-Gothic_2017_0702/Senobi-Gothic-Bold.ttf,sjis
-14,Senobi-Gothic-Medium,./fonts/JIS/MODI_Senobi-Gothic_2017_0702/Senobi-Gothic-Medium.ttf,sjis
-15,DelaGothicOne-Regular,./fonts/JIS/Dela_Gothic_One/DelaGothicOne-Regular.ttf,sjis
-16,umeboshi_,./fonts/JIS/umeboshifont/umeboshi_.ttf,sjis
-17,komorebi-gothic,./fonts/JIS/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf,sjis
-18,komorebi-gothic-P,./fonts/JIS/MODI_komorebi-gothic_2018_0501/komorebi-gothic-P.ttf,sjis
-19,851MkPOP_101,./fonts/JIS/851MkPOP_101/851MkPOP_101.ttf,sjis
-20,ArmedBanana,./fonts/JIS/ArmedBanana/ArmedBanana.ttf,sjis
-21,AsobiMemogaki-Regular-1-01,./fonts/JIS/asobi2/AsobiMemogaki-Regular-1-01.ttf,sjis
-22,saruji,./fonts/JIS/saruji/saruji.ttf,sjis
-23,Oshidashi-M-Gothic-TT,./fonts/JIS/Oshidashi-M-Gothic_0_600/TrueType/Oshidashi-M-Gothic-TT.ttf,sjis
-24,K Gothic,./fonts/JIS/K Gothic/K Gothic.ttf,sjis
-25,HachiMaruPop-Regular,./fonts/JIS/Hachi_Maru_Pop/HachiMaruPop-Regular.ttf,sjis
-26,ゆず ポップ A [M] Bold,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Bold.ttf,sjis
-27,ゆず ポップ A [M] Light,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Light.ttf,sjis
-28,ゆず ポップ A [M] Extra Light,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Extra Light.ttf,sjis
-29,ゆず ポップ A [M] Regular,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Regular.ttf,sjis
-30,YuseiMagic-Regular,./fonts/JIS/Yusei_Magic/YuseiMagic-Regular.ttf,sjis
-31,ちはや純,./fonts/JIS/chi_jyun/ちはや純.ttf,sjis
+1,Tanugo-TTF-Light,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Light.ttf,sjis
+2,Tanugo-TTF-Regular,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Regular.ttf,sjis
+3,Tanugo-TTF-Round-Bold,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Round-Bold.ttf,sjis
+4,Tanugo-TTF-Bold,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Bold.ttf,sjis
+5,Tanugo-TTF-Round-Regular,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Round-Regular.ttf,sjis
+6,Tanugo-TTF-Round-Light,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-Round-Light.ttf,sjis
+7,Tanugo-TTF-ExtraLight,./fonts/JIS/Tanugo_1_10/ttf/Tanugo-TTF-ExtraLight.ttf,sjis
+8,HonyaJi-Re,./fonts/JIS/font_honyajire/HonyaJi-Re.ttf,sjis
+9,ipaexg,./fonts/JIS/KanjyukuGothic/その他のファイル/ipaexg00201/ipaexg.ttf,sjis
+10,umeboshi_,./fonts/JIS/umeboshifont/umeboshi_.ttf,sjis
+11,komorebi-gothic,./fonts/JIS/MODI_komorebi-gothic_2018_0501/komorebi-gothic.ttf,sjis
+12,komorebi-gothic-P,./fonts/JIS/MODI_komorebi-gothic_2018_0501/komorebi-gothic-P.ttf,sjis
+13,851MkPOP_101,./fonts/JIS/851MkPOP_101/851MkPOP_101.ttf,sjis
+14,ArmedBanana,./fonts/JIS/ArmedBanana/ArmedBanana.ttf,sjis
+15,AsobiMemogaki-Regular-1-01,./fonts/JIS/asobi2/AsobiMemogaki-Regular-1-01.ttf,sjis
+16,saruji,./fonts/JIS/saruji/saruji.ttf,sjis
+17,Oshidashi-M-Gothic-TT,./fonts/JIS/Oshidashi-M-Gothic_0_600/TrueType/Oshidashi-M-Gothic-TT.ttf,sjis
+18,K Gothic,./fonts/JIS/K Gothic/K Gothic.ttf,sjis
+19,ゆず ポップ A [M] Bold,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Bold.ttf,sjis
+20,ゆず ポップ A [M] Light,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Light.ttf,sjis
+21,ゆず ポップ A [M] Extra Light,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Extra Light.ttf,sjis
+22,ゆず ポップ A [M] Regular,./fonts/JIS/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Regular.ttf,sjis
+23,Kaisotai-Next-UP-B,./fonts/JIS/kaiso_up/Kaisotai-Next-UP-B.ttf,sjis
+24,ちはや純,./fonts/JIS/chi_jyun/ちはや純.ttf,sjis
