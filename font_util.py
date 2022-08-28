@@ -36,7 +36,7 @@ def generate_image(character, font_path, image_path):
     for i in range(width):
         for j in range(height):
             if image.getpixel((i, j)) != 0:
-                if not os.path.exists(image_path):
+                if not os.path.exists("./images/U+{}".format(hex(character)[2:])):
                     os.mkdir(os.path.dirname(image_path))
                 image.save(image_path)
                 return True
