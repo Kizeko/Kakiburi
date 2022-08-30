@@ -22,8 +22,8 @@ File | Images | Download (Numpy format) |
 --- | --- | --- |
 Training images | 338,418 | [kakiburi-x_train.npy.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-x_train.npy.gz) (241MB) |
 Training labels | 338,418 | [kakiburi-y_train.npy.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-y_train.npy.gz) (857KB) |
-Validation images | 84,605 | [kakiburi-x_test.npy.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-y_train.npy.gz) (60MB) |
-Validation labels | 84,605 | [kakiburi-y_test.npy.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-y_train.npy.gz) (215KB) |
+Validation images | 84,605 | [kakiburi-x_test.npy.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-x_test.npy.gz) (60MB) |
+Validation labels | 84,605 | [kakiburi-y_test.npy.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-y_test.npy.gz) (215KB) |
     
 ## Generating the dataset
 
