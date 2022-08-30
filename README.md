@@ -43,7 +43,9 @@ Keep in mind it takes a long time to generate that much images.
 When it is done, you can transfer the data with :
 
 ```bash
-  $ docker cp kakiburi:/app/<data> ~/Documents/Kakiburi
+  $ docker cp kakiburi:/app/images destPath
+  $ docker cp kakiburi:/app/dataset_x.npy destPath
+  $ docker cp kakiburi:/app/dataset_y.npy destPath
 ```
 ## Locally
 
