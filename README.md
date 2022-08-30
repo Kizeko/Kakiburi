@@ -5,7 +5,7 @@
 
 IN CONSTRUCTION
 
-Kakiburi is a dataset of computer generated japanese characters (60x60 grayscale, 300,000 images).
+Kakiburi is a dataset of computer generated japanese characters (60x60 grayscale, 423,023 images).
 
 This dataset contains almost all used japanese characters ranging from hiragana, katakana and kanji to punctuation and special symbols.
 
@@ -16,7 +16,7 @@ You can download the dataset in a numpy array (.npy) format or download the imag
 
 File | Images | Download (Numpy format) | Download (Archive format)
 --- | --- | --- | --- |
-Complete dataset | 300,000 | [kakiburi-dataset.npy](https://google.com) (300MB) | [kakiburi-dataset.tar](https://google.com) (300MB)
+Complete dataset | 423,023 | [kakiburi-dataset.tar.gz](https://github.com/Kizeko/Kakiburi/releases/tag/Latest#:~:text=kakiburi%2Ddataset.tar.gz) (268MB) | [kakiburi-images.tar.gz](https://github.com/Kizeko/Kakiburi/releases/tag/Latest#:~:text=kakiburi%2Dimages.tar.gz) (357MB)
 Training images | 240,000 | [kakiburi-training-images.npy](https://google.com) (300MB) | [kakiburi-training-images.tar](https://google.com) (300MB) |
 Training labels | 240,000 | [kakiburi-training-labels.npy](https://google.com) (300MB) | [kakiburi-training-labels.tar](https://google.com) (300MB)
 Validation images | 60,000 | [kakiburi-validation-images.npy](https://google.com) (300MB) | [kakiburi-validation-images.tar](https://google.com) (300MB) |
