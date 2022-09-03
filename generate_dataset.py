@@ -17,7 +17,6 @@ temp_dataset_y = []
 
 # Generate the dataset
 i = 0
-current_unicode_number = 0
 current_unicode_total_count = 0
 while i < len(unicodes) - 1:
     start = unicodes[i]
@@ -38,6 +37,7 @@ while i < len(unicodes) - 1:
             # Appending the image to the dataset
             temp_dataset_x.append(image.getdata())
             temp_dataset_y.append(j)
+            current_unicode_total_count += 1
 
         # If there is more than x images for this unicode, we add them to the dataset
         if current_unicode_total_count >= MIN_NUMBER_OF_IMAGES_PER_UNICODE:
@@ -48,9 +48,8 @@ while i < len(unicodes) - 1:
         temp_dataset_x = []
         temp_dataset_y = []
 
-        # Reseting variables
+        # Reseting current unicode count
         current_unicode_total_count = 0
-        current_unicode_number += 1
     i += 2
 
 # Saving the dataset to a numpy file
