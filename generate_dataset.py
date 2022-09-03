@@ -1,5 +1,4 @@
 import numpy as np
-import cv2
 import pandas as pd
 from tqdm.auto import tqdm
 
@@ -13,29 +12,46 @@ infos = pd.read_csv("./fonts.csv", index_col=0)
 dataset_x = []
 dataset_y = []
 
+temp_dataset_x = []
+temp_dataset_y = []
+
 # Generate the dataset
-for index, info in infos.iterrows():
-    i = 0
-    while i < len(unicodes) - 1:
-        start = unicodes[i]
-        end = unicodes[i + 1]
-        print("\nStarted Generating the part (U+{})-(U+{}) of the font {} (#{}) :".format(hex(start)[2:], hex(end)[2:], info['name'], index))
-        for j in tqdm(range(start, end)):
+i = 0
+current_unicode_number = 0
+current_unicode_total_count = 0
+while i < len(unicodes) - 1:
+    start = unicodes[i]
+    end = unicodes[i + 1]
+    print("\nStarted Generating the part (U+{})-(U+{}) of the dataset :".format(hex(start)[2:], hex(end)[2:]))
+    for j in tqdm(range(start, end)):
+        for index, info in infos.iterrows():
             # Path of the image directory that will be generated
-            img_dir_path = "./images/U+{}".format(hex(j)[2:].capitalize())
+            img_dir_path = "./images/U+{}".format(hex(j)[2:])
             # Path of the image that will be generated
-            img_path = img_dir_path + "/{}_{}.png".format(hex(j)[2:].capitalize(), index)
+            img_path = img_dir_path + "/{}_{}.png".format(hex(j)[2:], index)
 
             # Generating image, it returns whether or not the image was generated
-            valid = generate_image(j, info['path'], img_dir_path, img_path)
+            valid, image = generate_image(j, info['path'], img_dir_path, img_path)
             if not valid:
                 continue
             
             # Appending the image to the dataset
-            img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
-            dataset_x.append(img)
-            dataset_y.append(j)
-        i += 2
+            temp_dataset_x.append(image.getdata())
+            temp_dataset_y.append(j)
+
+        # If there is more than x images for this unicode, we add them to the dataset
+        if current_unicode_total_count >= MIN_NUMBER_OF_IMAGES_PER_UNICODE:
+            dataset_x.extend(temp_dataset_x)
+            dataset_y.extend(temp_dataset_y)
+
+        # Resetting the temporary dataset
+        temp_dataset_x = []
+        temp_dataset_y = []
+
+        # Reseting variables
+        current_unicode_total_count = 0
+        current_unicode_number += 1
+    i += 2
 
 # Saving the dataset to a numpy file
 np.save("./dataset_x.npy", np.array(dataset_x).reshape(-1, width, height, 1))

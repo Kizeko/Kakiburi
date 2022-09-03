@@ -19,10 +19,10 @@ index,name,path
 17,SistersFL,./fonts/SistersFs/SistersFL.ttf
 18,HonyaJi-Re,./fonts/font_honyajire/HonyaJi-Re.ttf
 19,03スマートフォントUI,./fonts/SmartFontUI/03スマートフォントUI.otf
-20,ダーツフォント,./fonts/dartsfont/ダーツフォント.ttf
+20,ダーツフォント,./fonts/dartsfont/ダーツフォント.ttf
 21,chogokubosogothic_5,./fonts/chogokubosogothic/chogokubosogothic_5.ttf
 22,setofont,./fonts/setofont/setofont.ttf
-23,かんじゅくゴシック,./fonts/KanjyukuGothic/かんじゅくゴシック.otf
+23,かんじゅくゴシック,./fonts/KanjyukuGothic/かんじゅくゴシック.otf
 24,Harenosora,./fonts/hare/Harenosora.otf
 25,f_feltpen04,./fonts/f_feltpen11/f_feltpen04.otf
 26,OtsutomeFont_Ver3,./fonts/Otsutome_font_ver3/OtsutomeFont_Ver3.ttf
@@ -32,7 +32,7 @@ index,name,path
 30,togoshi-mincho,./fonts/togoshi-mincho-20080511/togoshi-mincho.ttf
 31,851MkPOP_101,./fonts/851MkPOP_101/851MkPOP_101.ttf
 32,Boku2-Bold,./fonts/boku2b/Boku2-Bold.otf
-33,アプリ明朝,./fonts/AppliMincho/アプリ明朝.otf
+33,アプリ明朝,./fonts/AppliMincho/アプリ明朝.otf
 34,FontopoNIHONGO,./fonts/nihongo/FontopoNIHONGO.otf
 35,ArmedBanana,./fonts/ArmedBanana/ArmedBanana.ttf
 36,uzura,./fonts/uzurafont100/uzura.ttf
@@ -44,10 +44,10 @@ index,name,path
 42,K Gothic,./fonts/K Gothic/K Gothic.ttf
 43,ipaexg,./fonts/ipaexg00201/ipaexg.ttf
 44,Honoka-Shin-Antique-Maru_R,./fonts/antique-maru2-1/Honoka-Shin-Antique-Maru_R.otf
-45,ゆず ポップ A [M] Bold,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Bold.ttf
-46,ゆず ポップ A [M] Light,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Light.ttf
-47,ゆず ポップ A [M] Extra Light,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Extra Light.ttf
-48,ゆず ポップ A [M] Regular,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Regular.ttf
+45,ゆず ポップ A [M] Bold,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Bold.ttf
+46,ゆず ポップ A [M] Light,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Light.ttf
+47,ゆず ポップ A [M] Extra Light,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Extra Light.ttf
+48,ゆず ポップ A [M] Regular,./fonts/ゆず ポップ A ver.0.6/ゆず ポップ A [M] Regular.ttf
 49,Corporate-Logo-Rounded,./fonts/corpround-ver2-font_202202/Corporate-Logo-Rounded.otf
 50,FUTENE,./fonts/FUTENE_font/FUTENE.ttf
 51,FUTENEmiddle,./fonts/FUTENE_font/FUTENEmiddle.ttf

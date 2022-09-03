@@ -1,5 +1,4 @@
 from PIL import ImageFont, ImageDraw, Image
-import os
 from fontTools.ttLib import TTFont
 
 # Defining image properties
@@ -8,6 +7,7 @@ text_color = (255)
 color_mode = 'L'
 font_size=55
 width, height = 60, 60
+MIN_NUMBER_OF_IMAGES_PER_UNICODE = 20
 
 # Ranges of unicode to create
 # Respectively the first and last unicode of each range
@@ -45,7 +45,7 @@ def generate_image(character, font_path, img_dir_path, img_path):
     # Checking if the font supports this unicode
     font = TTFont(font_path)
     if not char_in_font(chr(character), font):
-        return False
+        return (False, None)
 
     # Generating the image
     font = ImageFont.truetype(font=font_path, size=font_size)
@@ -57,16 +57,8 @@ def generate_image(character, font_path, img_dir_path, img_path):
 
     image_draw.text(xy=xy, text=chr(character), fill=text_color, font=font)
 
-    # Checking again for the font support of the character
-    # (some unicode are declared as supported but it doesn't write anything)
-    for i in range(width):
-        for j in range(height):
-            if image.getpixel((i, j)) != 0:
-                if not os.path.exists(img_dir_path):
-                    os.mkdir(os.path.dirname(img_path))
-                # Saving the image
-                image.save(img_path)
-                return True
-    
-    # Entire image was black, therefore the character is not supported
-    return False
+    # Checking again if the font supports this unicode
+    if not image.getbbox():
+        return (False, None)
+
+    return (True, image)
