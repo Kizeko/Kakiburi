@@ -2,3 +2,6 @@
 .vscode
 Dockerfile
 image_test.ipynb
+__pycache__
+.ipynb_checkpoints
+dataset_test.ipynb

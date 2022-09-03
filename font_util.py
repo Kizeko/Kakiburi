@@ -7,7 +7,7 @@ text_color = (255)
 color_mode = 'L'
 font_size=55
 width, height = 60, 60
-MIN_NUMBER_OF_IMAGES_PER_UNICODE = 20
+MIN_NUMBER_OF_IMAGES_PER_UNICODE = 15
 
 # Ranges of unicode to create
 # Respectively the first and last unicode of each range

@@ -18,11 +18,13 @@ temp_dataset_y = []
 # Generate the dataset
 i = 0
 current_unicode_total_count = 0
+cumulative_unicode_count = 0
 while i < len(unicodes) - 1:
     start = unicodes[i]
     end = unicodes[i + 1]
     print("\nStarted Generating the part (U+{})-(U+{}) of the dataset :".format(hex(start)[2:], hex(end)[2:]))
-    for j in tqdm(range(start, end)):
+    for j in (bar := tqdm(range(start, end))):
+        bar.set_description("Generating {} (#{}). Total dataset size = {} ".format(chr(j), cumulative_unicode_count, len(dataset_x)))
         for index, info in infos.iterrows():
             # Path of the image directory that will be generated
             img_dir_path = "./images/U+{}".format(hex(j)[2:])
@@ -44,12 +46,14 @@ while i < len(unicodes) - 1:
             dataset_x.extend(temp_dataset_x)
             dataset_y.extend(temp_dataset_y)
 
+
         # Resetting the temporary dataset
         temp_dataset_x = []
         temp_dataset_y = []
 
         # Reseting current unicode count
         current_unicode_total_count = 0
+        cumulative_unicode_count += 1
     i += 2
 
 # Saving the dataset to a numpy file
