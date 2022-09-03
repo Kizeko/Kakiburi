@@ -13,7 +13,19 @@ MIN_NUMBER_OF_IMAGES_PER_UNICODE = 20
 # Respectively the first and last unicode of each range
 # Punctuation, Hiragana, Katakana, Symbols and Kanji.
 unicodes = [0x3000,
-            0x303f]
+            0x303f,
+
+            0x3041,
+            0x309f,
+
+            0x30a0,
+            0x30ff,
+
+            0xff00,
+            0xffef,
+
+            0x4e00,
+            0x9faf]
 
 # Getting the total number of characters to generate (for the progress bar)
 total_unicodes = 0
