@@ -12,8 +12,8 @@ It was made by generating 60x60 grayscale images using commercial use ok fonts.
 
 You can download the dataset in a numpy array (.npy) format or download the images (.tar)
 
-File | Images | Download (Numpy format) | Download (Archive format)
---- | --- | --- | --- |
+File | Images | Download (Numpy format)
+--- | --- | --- |
 Complete dataset | 423,023 | [kakiburi-dataset.tar.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-dataset.tar.gz) (268MB)
     
 ## Generating the dataset
