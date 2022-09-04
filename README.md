@@ -14,7 +14,7 @@ You can download the dataset in a numpy array (.npy) format.
 
 File | Images | Download (Numpy format)
 --- | --- | --- |
-Complete dataset | 369,098 | [kakiburi-dataset.tar.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-dataset.tar.gz) (268MB)
+Complete dataset | 369,098 | [kakiburi-dataset.tar.gz](https://github.com/Kizeko/Kakiburi/releases/download/Latest/kakiburi-dataset.tar.gz) (435MB)
     
 ## Generating the dataset
 
