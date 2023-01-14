@@ -1,6 +1,5 @@
 .DS_Store
 .vscode
-Dockerfile
 image_test.ipynb
 __pycache__
 .ipynb_checkpoints
