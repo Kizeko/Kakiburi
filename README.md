@@ -1,7 +1,7 @@
 
 # Kakiburi
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) [![MIT License](https://img.shields.io/badge/Release-0.0.3-blue)](https://google.com)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) [![MIT License](https://img.shields.io/badge/Release-0.0.4-blue)](https://google.com)
 
 Kakiburi is a dataset of computer generated japanese characters (60x60 grayscale) that comes in 2 flavors (382,878 images, 8298 chars) or (369,098 images, 7110 chars).
 
