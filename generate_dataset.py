@@ -57,5 +57,7 @@ while i < len(unicodes) - 1:
     i += 2
 
 # Saving the dataset to a numpy file
-np.save("./dataset_x.npy", np.array(dataset_x).reshape(-1, width, height, 1))
-np.save("./dataset_y.npy", np.array(dataset_y).reshape(-1, 1))
+np.save("../data/dataset_x.npy", np.array(dataset_x).reshape(-1, width, height, 1))
+np.save("../data/dataset_y.npy", np.array(dataset_y).reshape(-1, 1))
+
+print("Dataset generated successfully !")

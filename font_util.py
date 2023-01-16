@@ -7,7 +7,7 @@ text_color = (255)
 color_mode = 'L'
 font_size=55
 width, height = 60, 60
-MIN_NUMBER_OF_IMAGES_PER_UNICODE = 15
+MIN_NUMBER_OF_IMAGES_PER_UNICODE = 10
 
 # Ranges of unicode to create
 # Respectively the first and last unicode of each range
@@ -31,6 +31,13 @@ unicodes = [0x3000,
 total_unicodes = 0
 for i in range(len(unicodes), 0, -2):
     total_unicodes += unicodes[i - 1] - unicodes[i - 2]
+
+def create_unicodes_list():
+    unicodes_list = []
+    for i in range(len(unicodes), 0, -2):
+        for j in range(unicodes[i - 2], unicodes[i - 1]):
+            unicodes_list.append(j)
+    return unicodes_list
 
 # Font support function
 def char_in_font(unicode_char, font):

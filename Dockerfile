@@ -9,4 +9,4 @@ RUN apt-get install ffmpeg libsm6 libxext6 -y
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "generate_dataset.py"]
+CMD ["python", "generate_dataset_multicore.py"]
