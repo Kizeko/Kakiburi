@@ -30,11 +30,6 @@ Running the container
 ```bash
   $ docker run -it --name kakiburi -v "/custom/path:/data" kizeko/kakiburi:latest
 ```
-Example :
-
-```bash
-  $ docker run -it --name kakiburi -v "~/kakiburi:/data" kizeko/kakiburi:latest
-```
 
 Keep in mind it takes a long time to generate that much images.
 
